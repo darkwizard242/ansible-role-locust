@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.com/darkwizard242/ansible-role-locust.svg?branch=master)](https://travis-ci.com/darkwizard242/ansible-role-locust) ![Ansible Role](https://img.shields.io/ansible/role/43831?color=dark%20green%20) ![Ansible Role](https://img.shields.io/ansible/role/d/43831?label=role%20downloads) ![Ansible Quality Score](https://img.shields.io/ansible/quality/43831?label=ansible%20quality%20score) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ansible-role-locust&metric=alert_status)](https://sonarcloud.io/dashboard?id=ansible-role-locust) ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/darkwizard242/ansible-role-locust?label=release) ![GitHub repo size](https://img.shields.io/github/repo-size/darkwizard242/ansible-role-locust?color=orange&style=flat-square)
+[![Build Status](https://travis-ci.com/darkwizard242/ansible-role-locust.svg?branch=master)](https://travis-ci.com/darkwizard242/ansible-role-locust) ![Ansible Role](https://img.shields.io/ansible/role/49193?color=dark%20green%20) ![Ansible Role](https://img.shields.io/ansible/role/d/49193?label=role%20downloads) ![Ansible Quality Score](https://img.shields.io/ansible/quality/49193?label=ansible%20quality%20score) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ansible-role-locust&metric=alert_status)](https://sonarcloud.io/dashboard?id=ansible-role-locust) ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/darkwizard242/ansible-role-locust?label=release) ![GitHub repo size](https://img.shields.io/github/repo-size/darkwizard242/ansible-role-locust?color=orange&style=flat-square)
 
 # Ansible Role: locust
 
-Role to install [locust](https://locust.io) pip package on **Debian/Ubuntu** systems.
+Role to install [locust](https://locust.io) pip package on **Debian/Ubuntu** systems for load testing purposes.
 
 ## Requirements
 
