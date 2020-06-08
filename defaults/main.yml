@@ -1,0 +1,11 @@
+---
+# defaults file for locust
+
+locust_debian_pre_reqs:
+  - python3
+  - python3-pip
+locust_debian_pre_reqs_desired_state: present
+pip_executable: pip3
+pip_upgrade_version: latest
+locust_app_debian_package: locust
+locust_desired_state: present
