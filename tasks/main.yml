@@ -1,0 +1,6 @@
+---
+# tasks file for locust
+
+- name: Import install_debian.yml if OS family is Debian
+  import_tasks: install_debian.yml
+  when: ansible_os_family == "Debian"

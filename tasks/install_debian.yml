@@ -1,0 +1,14 @@
+---
+# tasks file for locust - Debian
+
+- name: Installing {{ locust_debian_pre_reqs }} on Debian based systems as pre-requisite.
+  package:
+    name: "{{ locust_debian_pre_reqs }}"
+    state: "{{ locust_debian_pre_reqs_desired_state }}"
+    force_apt_get: yes
+
+- name: Installing {{ locust_app_debian_package }} on Debian based systems.
+  pip:
+    executable: "{{ pip_executable }}"
+    name: "{{ locust_app_debian_package }}"
+    state: "{{ locust_desired_state }}"
