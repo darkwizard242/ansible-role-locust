@@ -28,12 +28,12 @@ locust_desired_state: present
 ### Variables table:
 
 Variable                             | Value (default)      | Description
------------------------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------
-locust_debian_pre_reqs               | python3, python3-pip | Packages required to install AWS CLI on Debian based systems. Using python3 as python2.x is EOL by end of 2020.
-locust_debian_pre_reqs_desired_state | present              | Desired state for AWS CLI pre-requisite apps on Debian systems.
+------------------------------------ | -------------------- | ------------------------------------------------------------------------------------------------------------------
+locust_debian_pre_reqs               | python3, python3-pip | Packages required to install **locust** on Debian based systems. Using python3 as python2.x is EOL by end of 2020.
+locust_debian_pre_reqs_desired_state | present              | Desired state for **locust** pre-requisite apps on Debian systems.
 pip_executable                       | pip3                 | The executable to utilize for installing **pip** package of `locust`.
 locust_app_debian_package            | locust               | Name of locust application package require to be installed i.e. `locust` on Debian based systems.
-locust_desired_state                 | present              | Desired state for AWS CLI.
+locust_desired_state                 | present              | Desired state for **locust**.
 
 ## Dependencies
 
