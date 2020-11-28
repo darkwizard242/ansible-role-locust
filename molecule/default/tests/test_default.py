@@ -6,13 +6,25 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
     os.environ['MOLECULE_INVENTORY_FILE']).get_hosts('all')
 
 
+PACKAGE_BINARY = '/usr/local/bin/locust'
+
+
 def test_locust_binary_exists(host):
-    assert host.file('/usr/local/bin/locust').exists
+    """
+    Tests if locust binary exists.
+    """
+    assert host.file(PACKAGE_BINARY).exists
 
 
 def test_locust_binary_file(host):
-    assert host.file('/usr/local/bin/locust').is_file
+    """
+    Tests if locust binary is a file type.
+    """
+    assert host.file(PACKAGE_BINARY).is_file
 
 
 def test_locust_binary_which(host):
-    assert host.check_output('which locust') == '/usr/local/bin/locust'
+    """
+    Tests the output to confirm locust's binary location.
+    """
+    assert host.check_output('which locust') == PACKAGE_BINARY
