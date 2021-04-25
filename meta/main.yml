@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: locust
-  author: Ali Muhammad
+  author: darkwizard242
   description: Installs locust using pip3 package for load testing.
   company: none
   license: MIT
