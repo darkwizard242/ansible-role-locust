@@ -2,13 +2,20 @@
 # tasks file for locust - Debian/Ubuntu Family
 
 - name: Debian/Ubuntu Family | Installing {{ locust_debian_pre_reqs }} as pre-requisite.
-  package:
+  ansible.builtin.package:
     name: "{{ locust_debian_pre_reqs }}"
     state: "{{ locust_debian_pre_reqs_desired_state }}"
     force_apt_get: yes
 
+- name: Debian/Ubuntu Family | blinker distutils failure workaround
+  ansible.builtin.pip:
+    executable: "{{ pip_executable }}"
+    name: "blinker"
+    state: latest
+    extra_args: "--ignore-installed"
+
 - name: Debian/Ubuntu Family | Installing {{ locust_app_debian_package }}
-  pip:
+  ansible.builtin.pip:
     executable: "{{ pip_executable }}"
     name: "{{ locust_app_debian_package }}"
     state: "{{ locust_desired_state }}"
